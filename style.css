@@ -1,0 +1,58 @@
+/*? CSS For 5 RealLife Projects HomePage */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #111;
+    overflow: hidden;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2% 18%;
+    
+}
+
+.container .cursor {
+    width: 20px;
+    height: 20px;
+    mix-blend-mode: difference;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0;
+    position: absolute;
+    transition: all linear 0.2s ;
+    z-index: 1;
+}
+
+.container h1 {
+    width: 100%;
+    border: 3px solid white;
+    font-size: 3vw;
+    margin: 2% 0;
+    padding: 0.5%;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.container h1 a {
+    text-decoration: none;
+    padding: 0 5%;
+}
+
+h1:hover{
+    background-color: crimson;
+    transform: scale(1.05);
+
+}

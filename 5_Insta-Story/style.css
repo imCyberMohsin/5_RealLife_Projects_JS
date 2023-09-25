@@ -1,11 +1,70 @@
-/*? Insta Story CSS  */
-*{
+/*? Insta Story CSS */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 320px;
+    height: 480px;
+    background-color: white;
+    border-radius: 8px;
+    position: relative; /* Add this line */
+}
+
+.story-container {
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid grey;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    white-space: nowrap; /* Prevents the stories from wrapping to the next line */
+    padding: 0 2%;
+    overflow-x: auto;
+}
+.story-container::-webkit-scrollbar{
+    display: none;
+}
+
+.story {
+    height: 72px;
+    width: 72px;
+    margin: 0 3px;
+    border-radius: 50%;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0; /* Prevents stories from shrinking */
+    overflow: hidden;
+}
+
+.story img {
+    width: 95%;
+    border-radius: 50%;
+}
+
+/** Will Be displayed with JS */
+.full-scrren-image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    background-position: center;
+    background-size: cover;
+    border-radius: 6px;
 }

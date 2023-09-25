@@ -32,7 +32,7 @@ body {
     border-radius: 50%;
     opacity: 0;
     position: absolute;
-    transition: all linear 0.2s ;
+    transition: all linear 0.1s ;
     z-index: 1;
 }
 
@@ -54,5 +54,4 @@ body {
 h1:hover{
     background-color: crimson;
     transform: scale(1.05);
-
 }
